@@ -1,0 +1,78 @@
+form{
+    background-color: rgb(185, 179, 179);
+    border:1px solid black;
+    width: 940px;
+}
+#name{
+    margin-left: 85px;
+    border-radius: 7px;
+    height: 24px;
+}
+#name1{
+    margin-left: 182px;
+    color: rgb(87, 84, 84);
+}
+#add{
+    margin-left: 57px;
+    border-radius: 7px;
+    height: 24px;
+    width: 682px;
+
+}
+#add0{
+    margin-left: 162px;
+    border-radius: 7px;
+    height: 24px;
+    width: 682px;
+}
+#add1{
+     margin-left: 162px;
+    border-radius: 7px;
+    height: 24px;
+}
+#add2{
+    margin-left: 85px;
+   border-radius: 7px;
+   height: 24px;
+}
+#state{
+    margin-left: 206px;
+    color: rgb(87, 84, 84);
+
+}
+#ph{
+    margin-left: 47px;
+    border-radius: 7px;
+    height: 24px;
+    width: 54px;
+}
+#ph1{
+    margin-left: 15px;
+    border-radius: 7px;
+    height: 24px;
+}
+#phh{
+    margin-left: 160px;
+    color: rgb(87, 84, 84);
+}
+#phh1{
+    margin-left: 60px;
+    color: rgb(87, 84, 84);
+}
+#day{
+    margin-left: 77px;
+    border-radius: 5px;
+    height: 20px;
+}
+#dn{
+    margin-left: 165px;
+    color: rgb(87, 84, 84);
+}
+#dn1{
+    margin-left: 92px;
+    color: rgb(87, 84, 84);
+}
+#button{
+    margin-left: 360px;
+    background-color: orange;
+}

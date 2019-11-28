@@ -1,0 +1,23 @@
+form{
+    border : 1px solid black;
+    height: 595px;
+    width: 500px;
+    margin-left: 450px;
+}
+#name{
+    padding: 5px 101px;
+    margin-left: 25px;
+    width:152px;
+}
+#title{
+    margin-left: 25px;
+}
+#radius{
+    margin-left: 42px;
+}
+#mid{
+    margin-left: 146px;
+}
+#mid1{
+    margin-left: 20px;
+}

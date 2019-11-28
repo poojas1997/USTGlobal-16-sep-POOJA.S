@@ -1,0 +1,80 @@
+div{ 
+    background-image: url(/image/colorful-sky-after-sunset-by-260nw-431623435.webp);
+    background-size: cover;
+    width: 1343px;
+    height: 393px;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    color: white;
+    inline-size: auto; 
+}
+#right{
+    margin-left: 578px; 
+}
+#right1{
+    margin-left: 50px; 
+}
+
+input[type="submit"]{
+    width: 70px;
+    margin-left: 1375px;
+    
+}
+#head{
+       text-align: center;
+
+}
+
+label{
+    font-family: cursive;
+    font-size: 25px;
+}
+
+input[type="text"]{
+    width: 761px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 6px;
+    margin-left: 352px;
+    
+}
+
+img {
+    background: white;
+    height: 330px;
+    width: 348px;
+  
+  
+}
+
+input[type="button"]{
+    margin-left: 643px;
+    margin-top: 20px;
+    width:193px;
+    height: 50px;
+    border-radius: 15px;
+    background: rgb(32, 126, 32);
+    color: white;
+    outline: none;
+    
+}
+body{
+    font-family: 'Lucida Sans';
+    font-size: 10px; 
+}
+#but{
+    width: 180px;
+    height: 50px ;
+    margin-left: 450px;
+}
+#but1{
+    width: 180px;
+    height: 50px ;
+    margin-left: 82px;
+}
+
+#poos{
+    text-align: center;
+}
+
+

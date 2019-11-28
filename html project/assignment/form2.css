@@ -1,0 +1,35 @@
+form{
+    border:1px solid silver;
+    box-shadow:5px 2px 5px;
+    width: 491px;
+    margin-left: 10px;
+
+}
+#name{
+    padding: 6px;
+}
+#name1{
+    margin-left: 16px;
+    padding: 6px;
+}
+#name2{
+    margin-left: 125px;  
+}
+#address{
+    width: 71px;
+    padding: 6px 151px;
+}
+#city{
+    padding: 6px;
+}
+#state{
+    margin-left: 16px;
+    padding: 6px;
+}
+#state1{
+    margin-left: 166px;  
+}
+#country{
+    padding: 6px;
+    margin-left: 18px;
+}
