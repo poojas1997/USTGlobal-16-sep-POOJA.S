@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prime</title>
+</head>
+<body>
+    <script>
+        //named function
+        function prime(q)
+        {
+            var flag = 0 ;
+           for ( i = 2 ; i <= q/2 ; i++)
+            {
+                if(q % i === 0)
+                {
+                   flag = 1;
+                   break;
+                }
+            }
+                if ( flag === 0)
+                {
+                    console.log("given number is prime")
+                }
+                
+                else
+                 {
+                    console.log("Given number is not prime")
+                }
+            
+            
+        }
+        prime(11);
+        console.log("------------------------")
+        
+        //function expression
+        var res = function (q)
+        {
+            var flag = 0 ;
+           for ( i = 2 ; i <= q/2 ; i++)
+            {
+                if(q % i === 0)
+                {
+                   flag = 1;
+                   break;
+                }
+            }
+                if ( flag === 0)
+                {
+                    console.log("Given number is prime")
+                }
+                
+                else
+                 {
+                    console.log("Given number is not prime")
+                }
+              
+        }
+        res(22);
+        console.log('-----------------');
+
+        //self invoked expression
+        (function (q)
+        {
+            var flag = 0 ;
+           for ( i = 2 ; i <= q/2 ; i++)
+            {
+                if(q % i === 0)
+                {
+                   flag = 1;
+                   break;
+                }
+            }
+                if ( flag === 0)
+                {
+                    console.log("Given number is prime")
+                }
+                
+                else
+                 {
+                    console.log("Given number is not prime")
+                }  
+        })(13);
+        console.log('-----------------');
+
+        //FatArrow function
+       var prime = q =>{
+            var flag = 0 ;
+           for ( i = 2 ; i <= q/2 ; i++)
+            {
+                if(q % i === 0)
+                {
+                   flag = 1;
+                   break;
+                }
+            }
+                if ( flag === 0)
+                {
+                    console.log("Given number is prime")
+                }
+                
+                else
+                 {
+                    console.log("Given number is not prime")
+                }  
+        }
+        prime(90);
+    </script>
+</body>
+</html>

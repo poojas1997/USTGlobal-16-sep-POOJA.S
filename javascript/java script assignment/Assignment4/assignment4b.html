@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Enable</title>
+</head>
+<body>
+   <input type="text" id="name" minlength ="4"  onkeyup="showname()" placeholder="Username"><br><br>
+   <input type="password" id="pass" minlength="5" value=""  placeholder="Password">
+   
+    <input type="checkbox" onclick="click()">Show Password<br><br>
+    <input type="submit" value="Login">
+
+    <script>
+        function showname(){
+            let Name = document.getElementById('name');
+        }
+        function click(){
+            let Password = document.getElementById('pass');
+            if(Password.length < 6 ){
+                console.log('minimum length is 5')
+                
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

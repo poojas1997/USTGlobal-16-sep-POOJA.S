@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibonacci</title>
+</head>
+<body>
+    <script>
+        //Named function
+        function fibonacci(num)
+        {
+            var a = 0;
+            var b = 1;
+            var c;
+            for(i = 2; i <= num; i++)
+            {
+               var c = a + b;
+               var a = b ;
+               var b = c;   
+            }
+            console.log("fibonacci = ",a,b,c)
+        }
+        fibonacci(3);
+        console.log("-----------------")
+
+        //Function Expression
+        var fibonacci = function(num)
+        {
+            var a = 0;
+            var b = 1;
+            var c;
+            for(i = 2; i <= num; i++)
+            {
+                var c = a + b;
+                var a = b;
+                var b = c;
+            }
+            console.log("fibonacci =",a,b,c)
+        }
+        fibonacci(4);
+        console.log("-----------------");
+
+        //self invoked function
+        (function(num)
+        {
+            var a = 0;
+            var b = 1;
+            var c;
+            for(i = 2; i <= num; i++)
+            {
+                var c = a + b;
+                var a = b;
+                var b = c;
+            }
+            console.log("fibonacci = ",a,b,c)
+        })(5);
+        console.log("-----------------")
+
+        //FatArrow function
+        var fact = num => {
+            var a = 0;
+            var b = 1;
+            var c;
+            for(i = 2; i <= num; i++ )
+            {
+                var c = a + b;
+                var a = b;
+                var b = c;
+            }
+            console.log("fibonacci = ",a,b,c)
+        }
+        fact(6);
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

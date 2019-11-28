@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>array add</title>
+</head>
+<body>
+    <script>
+        //named function
+       function add1(a)
+       {
+        var sum = 0;
+            for(var i = 0; i < a.length; i++)
+            {
+                var sum = sum + a[i];
+            }
+            console.log("sum =",sum)
+       }
+       var a = [10, 20,30,40];
+       add1(a);
+       console.log('----------------')
+
+       //Function Expression
+       var total = function (b)
+       {
+           var sum = 0;
+           for( var i = 0; i < b.length; i++)
+           {
+               var sum = sum + b[i];
+           }
+           console.log("sum =",sum)
+       }
+       var b = [11,22,33,44,55];
+       total(b);
+       console.log('--------------');
+
+       //slelf invoked function
+       (function (c)
+       {
+           var sum = 0;
+           for(var i = 0; i < c.length; i++)
+           {
+               var sum = sum + c[i];
+           }
+           console.log("sum =",sum)
+       })( [12,22,32,42,52]);
+       console.log('--------------');
+
+       //Fatarrow function
+       var result = d =>{
+        var sum = 0;
+           for(var i = 0; i < d.length; i++)
+           {
+               var sum = sum + d[i];
+           }
+           console.log("sum =",sum)
+       }
+       result([100,210,300,410]);
+    </script>
+</body>
+</html>

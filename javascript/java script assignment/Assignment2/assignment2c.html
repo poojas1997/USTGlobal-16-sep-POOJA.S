@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Circumference of circle</title>
+</head>
+<body>
+    <script>
+       // named function
+       function circle(r){
+           var res = 2*Math.PI*r;
+           console.log("circumference of circle = ",res)
+       } 
+       circle(8);
+       console.log("----------------")
+
+       //Function Expression
+       var circle = function(r)
+       {
+           var res = 2 * Math.PI * r;
+           console.log("circumference of circle =",res)
+       }
+       circle(10);
+       console.log("----------------");
+
+
+       //self invoked function
+       (function (r)
+       {
+           var res = 2 * Math.PI * r;
+           console.log("circumference of circle =",res)
+       })(12);
+       console.log("----------------")
+
+
+       //FatArrow function
+       var cir = r => {
+           var res = 2 * Math.PI * r;
+           console.log("circumference of circle =",res)
+       }
+       cir(15);
+    </script>
+    
+</body>
+</html>
