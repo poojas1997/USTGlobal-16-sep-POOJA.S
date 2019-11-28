@@ -1,0 +1,19 @@
+.card-img-top{
+    display: flex;
+    width: 185px;
+    height: 183px;
+    /* margin-left: 25px; */
+    /* box-shadow: 10px 5px 2px steelblue */
+ 
+}
+
+.card-deck{
+    width: 1303px;
+    height:100px;
+    margin-left: 152px;
+    /* box-shadow: 10px 5px 2px yellow; */
+}
+
+.card{
+    box-shadow: 5px 5px 2px gainsboro;
+}
