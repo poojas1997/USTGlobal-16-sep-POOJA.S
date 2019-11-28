@@ -1,0 +1,22 @@
+<div class="col-md-4 offset-4 mt-4 mb-4 card card-body">
+    <form action="" [formGroup]="form" (ngSubmit)="loginData(form)">
+        <h2 class="text-center text-danger bg-dark">Reactive-Form</h2>
+        <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email....." formControlName="email">
+            <div *ngIf="email.touched && email.invalid">
+                <p *ngIf="email.errors.required" class="text-danger">*This field is mandatory</p>
+                <p *ngIf="email.errors.Unique" class="text-danger">*Email already exists</p>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password....." formControlName="password">
+            <div *ngIf="password.touched && password.invalid">
+                    <p *ngIf="password.errors.required" class="text-danger">*This field is mandatory</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-warning float-right" [disabled]="form.invalid">Login</button>
+        </div>
+    </form>
+</div>

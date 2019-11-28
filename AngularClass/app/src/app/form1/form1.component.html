@@ -1,0 +1,24 @@
+<form action="" class="col-md-4 offset-4 mt-5 mb-5 card card-body" #form1="ngForm" (ngSubmit) = "companyData(form1)">
+    <h1 class="text-center bg-dark text-light"> Company Requirement Form</h1>
+    <div class="form-group">
+        <input type="text" name="name" id="name" class="form-control" placeholder="Company Name" #name="ngModel" ngModel required><br>
+        <div *ngIf = "name.touched && name.invalid">
+            <p *ngIf="name.errors.required" class="text-danger">*This field is required</p>
+        </div>
+        <select name="skills" id="skills" class="form-control" aria-placeholder="skills" #skills="ngModel" ngModel>
+            <option value="" disabled  #skills="ngModel" ngModel>Skills</option>
+            <option value=""  #skills="ngModel" ngModel>Java</option>
+            <option value=""  #skills="ngModel" ngModel>SQL</option>
+            <option value=""  #skills="ngModel" ngModel>ANGULAR</option>
+            <option value=""  #skills="ngModel" ngModel>SPRING</option>
+        </select><br>
+        <input type="tel" name="number" id="number" class="form-control" placeholder="Years of experience" #tel="ngModel" ngModel required><br>
+       <div *ngIf = "tel.touched && name.invalid">
+            <p *ngIf="tel.errors.required" class="text-danger">*This field is required</p>
+        </div> <input type="text" name="name" id="name" class="form-control" placeholder=" MCTC" #text1="ngModel" ngModel><br>
+        <input type="text" name="location" id="location"class="form-control" placeholder="location" #text2="ngModel" ngModel><br>
+        
+        <button type="submit" class="btn btn-outline-success float-right " [disabled]="form1.invalid">Add Requirement</button>
+    </div>
+
+</form>

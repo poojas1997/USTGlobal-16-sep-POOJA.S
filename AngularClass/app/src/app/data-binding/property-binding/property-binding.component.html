@@ -1,0 +1,45 @@
+<h1 [innerText]="name"></h1>
+
+<img [src]="imgUrl" alt="" [class.rounded-circle]="isActive">
+
+<h1 [style.color]="colorname" [class.bg-dark]="isActive" [class.bg-success]="!isActive">{{address}}</h1>
+
+<table class="table table-dark table-bordered table-striped">
+
+    <thead class="table-success text-dark">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th [attr.colspan]="colspanValue">Contact Number</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Pooja</td>
+        <td>22</td>
+        <td>9535900836</td>
+        <td>701905686</td>
+    </tr>
+
+    <tr>
+        <td>Pooja</td>
+        <td>22</td>
+        <td>9535900836</td>
+        <td>701905686</td>
+    </tr>
+
+    <tr>
+        <td>Pooja</td>
+        <td>22</td>
+        <td>9535900836</td>
+        <td>701905686</td>
+    </tr>
+
+    <tr>
+        <td>Pooja</td>
+        <td>22</td>
+        <td>9535900836</td>
+        <td>701905686</td>
+    </tr>
+</tbody>
+</table>
