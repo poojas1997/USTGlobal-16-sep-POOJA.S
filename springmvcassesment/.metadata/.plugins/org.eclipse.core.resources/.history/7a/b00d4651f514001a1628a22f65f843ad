@@ -1,0 +1,5 @@
+package com.ustglobal.springmvcassesment.config;
+
+public class ORMConfig {
+
+}

@@ -1,0 +1,61 @@
+<%@page import="com.ustglobal.springmvcassesment.dto.Retailer"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+   <%
+	Retailer rt = (Retailer) session.getAttribute("rt");
+
+   %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="./updatepassword">Update Password</a>
+<a href="./logout" style="float:right">Logout</a>
+<h2 align="center">Welcome <%=rt.getName() %></h2>
+
+<center>
+<legend>Search Product</legend>
+		<form action="./search">
+			<table>
+				<tr>
+					<td>PId:</td>
+					<td><input type="tel" name="id"></td>
+					<td><input type="submit" value="search"></td>
+				</tr>
+			</table>
+		</form>
+<%
+		Retailer rtr = (Retailer) request.getAttribute("rt");
+	%>
+
+	<%
+		if (rtr != null) {
+	%>
+	<center>
+	<table border="1" style="border: solid" >
+	
+		<tr>
+			<th>Order Id</th>
+			<th>Product Name</th>
+			<th>Price per Unit</th>
+			<th>Quantity</th>
+			<th>Amount Payable</th>
+			<th>Retailer Id</th>
+		</tr>
+
+		<tr>
+			
+		</tr>
+	</table>
+</center>
+	<%
+		}
+	%>
+	<h3 style="color:red;">${msg }</h3>
+</center>
+</body>
+</html>

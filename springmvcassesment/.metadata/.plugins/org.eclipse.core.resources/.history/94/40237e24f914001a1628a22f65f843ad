@@ -1,0 +1,7 @@
+package com.ustglobal.springmvcassesment.dao;
+
+import com.ustglobal.springmvcassesment.dto.Product;
+
+public interface ProductDao {
+public Iterable<Product> product();
+}

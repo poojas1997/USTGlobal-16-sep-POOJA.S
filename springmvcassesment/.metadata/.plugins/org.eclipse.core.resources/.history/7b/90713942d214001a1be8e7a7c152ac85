@@ -1,0 +1,77 @@
+package com.ustglobal.springmvcassesment.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.PersistenceUnit;
+import javax.persistence.TypedQuery;
+
+import org.springframework.stereotype.Repository;
+
+import com.ustglobal.springmvcassesment.dto.Product;
+import com.ustglobal.springmvcassesment.dto.Retailer;
+
+@Repository
+public class RetailerImplDao implements RetailerDAO {
+
+	
+	private EntityManagerFactory factory = Persistence.createEntityManagerFactory("retailer");
+	@Override
+	public Retailer login(int id, String password) {
+		String jpql = "from Retailer where id = :id and password = :pass";
+		EntityManager manager = factory.createEntityManager();
+		TypedQuery<Retailer> query = manager.createQuery(jpql, Retailer.class);
+		query.setParameter("id", id);
+		query.setParameter("pass", password);
+		try {
+			Retailer rt = query.getSingleResult();
+			return rt;
+		}catch(Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}//end of login
+
+	@Override
+	public int register(Retailer rt) {
+		
+		EntityManager manager = factory.createEntityManager();
+//		EntityTransaction transaction = manager.getTransaction();
+//		transaction.begin();
+//		try {
+//		manager.persist(bean);
+//		transaction.commit();
+//		return bean.getId();
+//		}catch(Exception e) {
+//			e.printStackTrace();
+//			transaction.rollback();
+//			return -1;
+//		}
+		
+		
+	}//end of register
+	
+
+	@Override
+	public Product searchProduct(int pid) {
+		return null;
+	}
+
+	@Override
+	public boolean updatePassword(int id, String password) {
+		return false;
+	}
+
+	@Override
+	public double amountPaid(double price) {
+		return 0;
+	}
+
+	@Override
+	public boolean retriveOrder(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+}//end of RetailerImplDao

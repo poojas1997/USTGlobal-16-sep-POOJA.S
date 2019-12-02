@@ -1,0 +1,5 @@
+package com.ustglobal.springmvcassesment.dto;
+
+public class Retailer {
+
+}
