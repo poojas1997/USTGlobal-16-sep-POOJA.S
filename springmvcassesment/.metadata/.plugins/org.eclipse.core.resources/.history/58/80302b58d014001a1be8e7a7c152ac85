@@ -1,6 +1,0 @@
-package com.ustglobal.springmvcassesment.dao;
-
-public interface ProductDAO {
-
-	
-}
