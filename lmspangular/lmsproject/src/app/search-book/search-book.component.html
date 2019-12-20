@@ -1,0 +1,38 @@
+<body>
+<div class="col-md-4 offset-4 mt-5">
+    <form #search='ngForm' (ngSubmit)='searchBook(search)'>
+
+        <input type="tel" name="search" id="search" placeholder="Enter book id.." #search='ngModel' ngModel >
+        <button type="submit" style="float: right;">search</button>
+    </form>
+</div><br>
+<img src="https://cdn.pixabay.com/photo/2015/10/30/12/14/search-1013910_960_720.jpg" alt="">
+<table class="table-bordered table-striped  col-md-8 offset-2" *ngIf='book'>
+    <thead style="background-color: black; color: white;">
+        <tr>
+            <th>Bid</th>
+            <th>Book name</th>
+            <th>Author</th>
+            <th>Request</th>
+            <th>user ID</th>
+           
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{book.bid}}</td>
+            <td>{{book.bookname}}</td> 
+            <td>{{book.author}}</td>
+            <td>
+                <button type="button" (click)="requestBook(book)" class="btn btn-primary btn-bordered-radius ">Request</button>
+            </td>
+            <td>{{user_detail}}
+            </td>
+        </tr>
+    </tbody>
+    </table><br>
+
+
+</body>
+  

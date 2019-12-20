@@ -1,0 +1,24 @@
+
+<table class="table-bordered table-striped  col-md-8 offset-2" >
+    <thead style="background-color: black; color: white;">
+        <tr>
+            <th>user ID</th>
+            <th>Bid</th>
+            <th>Accept</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{uid}}</td>
+            <td>{{bid}}</td>
+            <td>
+                <button (click)="getRequest(uid,bid)" class="btn btn-success">Accept</button>
+            </td> 
+            
+                      
+        </tr >
+    </tbody>
+    </table>
+
+  
