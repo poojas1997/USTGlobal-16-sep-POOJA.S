@@ -1,0 +1,36 @@
+<div class="col-md-4 offset-md-4 mt-5 card card-body">
+    <div class="card-header" style="background-color: rgb(7, 0, 100);">
+        <h3 style="text-align: center; color: white;">MODIFY PRODUCT</h3>
+    </div><br>
+    <form #form='ngForm' (ngSubmit)="Modifyform(form)">
+        <label for="id">ID</label>
+        <input type="tel" name="id" id="id" class="form-control mb-3" #name="ngModel" ngModel required>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control mb-3" #name="ngModel" ngModel required
+            pattern="[A-Za-z]{3,20}" title="name should have only alphabets">
+        <div *ngIf="name.touched && name.invalid">
+            <p *ngIf="name.errors.required" class="text-danger">*This field is mandatory</p>
+        </div>
+
+        <label for="category">Category</label>
+        <input type="text" name="category" id="category" class="form-control mb-3" #category="ngModel" ngModel required   pattern="[A-Za-z]{3,20}" title="category should have only alphabets">
+        <div *ngIf="category.touched && category.invalid">
+            <p *ngIf="category.errors.required" class="text-danger">*This field is mandatory</p>
+        </div>
+        <label for="company">Company</label>
+        <input type="text" name="company" id="company" class="form-control mb-3" #company="ngModel" ngModel required   pattern="[A-Za-z]{3,20}" title="company should have only alphabets">
+        <div *ngIf="company.touched && company.invalid">
+            <p *ngIf="company.errors.required" class="text-danger">*This field is mandatory</p>
+        </div>
+        <label for="quantity">Quantity</label>
+        <input type="tel" name="quantity" id="quantity" class="form-control mb-3" #quantity="ngModel" ngModel required>
+        <div *ngIf="quantity.touched && quantity.invalid">
+            <p *ngIf="quantity.errors.required" class="text-danger">*This field is mandatory</p>
+        </div>
+        <label for="price">Price</label>
+        <input type="tel" name="price" id="price" class="form-control mb-3" #price="ngModel" ngModel required>
+
+        <button class="btn btn-outline-success" type="submit" style="float: right;"
+            [disabled]="form.invalid">MODIFY</button>
+    </form>
+</div>

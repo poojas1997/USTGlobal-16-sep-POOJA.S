@@ -1,0 +1,28 @@
+<div class="col-md-4 offset-4 mt-5">
+    <form #search='ngForm' (ngSubmit)='searchProduct(search)'>
+
+        <input type="tel" name="search" id="search" placeholder="Enter book id.." #search='ngModel' ngModel >
+        <button type="submit" style="float: right;">search</button>
+    </form>
+</div><br>
+<table class="table-bordered table-striped  col-md-8 offset-2" *ngIf='book'>
+    <thead style="background-color: black; color: white;">
+        <tr>
+            <th>Id</th>
+            <th>Product name</th>
+            <th>Category</th>
+            <th>Company</th>
+            <th>Quantity</th>
+           <th>Price</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td> 
+            <td>{{product.category}}</td>
+            
+        </tr>
+    </tbody>
+    </table><br>
