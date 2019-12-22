@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { ModifyComponent } from './modify/modify.component';
 import { SearchComponent } from './search/search.component';
+import { GetallComponent } from './getall/getall.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SearchComponent } from './search/search.component';
     HeaderComponent,
     AddComponent,
     ModifyComponent,
-    SearchComponent
+    SearchComponent,
+    GetallComponent
     
   ],
   imports: [

@@ -1,4 +1,7 @@
-<div class="col-md-4 offset-md-4 mt-5 card card-body">
+
+<body>
+    <div class="col-md-4 offset-md-4 mt-5 card card-body">
+  
     <div class="card-header" style="background-color: darkgreen;">
         <h3 style="text-align: center; color: white;">ADD PRODUCT</h3>
     </div><br>
@@ -28,7 +31,8 @@
         <label for="price">Price</label>
         <input type="tel" name="price" id="price" class="form-control mb-3" #price="ngModel" ngModel required>
 
-        <button class="btn btn-outline-success" type="submit" style="float: right;"
+        <button class="btn btn-success" type="submit" style="float: right;"
             [disabled]="form.invalid">ADD</button>
     </form>
 </div>
+</body>

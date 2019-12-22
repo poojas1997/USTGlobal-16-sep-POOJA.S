@@ -1,0 +1,26 @@
+<input type="search" name="search" [(ngModel)]='search' placeholder="Enter id of product to search..."
+    class="form-control col-md-4 offset-md-4 mb-3 mt-5">
+<div class="panel-body">
+    <table class="table table-hover table-sm table-bordered">
+
+        <thead class="thead-light">
+            <tr>
+                <th scope="row">PRODUCT_ID</th>
+                <th scope="row">NAME</th>
+                <th scope="row">QUANTITY</th>
+                <th scope="row">COMPANY</th>
+                <th scope="row">PRICE</th>
+                <th scope="row">CATEGORY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let products of product">
+                <td>{{products.product_id}}</td>
+                <td>{{products.name}}</td>
+                <td>{{products.Quantity}}</td>
+                <td>{{products.company}}</td>
+                <td>{{products.price}}</td>
+                <td>{{products.category}}</td>
+            </tr>
+        </tbody>
+    </table>

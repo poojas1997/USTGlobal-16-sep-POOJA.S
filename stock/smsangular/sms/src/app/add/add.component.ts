@@ -19,6 +19,9 @@ export class AddComponent implements OnInit {
     console.log(form.value);
     this.auth.AddProduct(form.value).subscribe(data => {
       console.log(data);
+      if (data && data.message === 'Product added Succesfully') {
+        alert('Product added succesfully');
+      }
     });
   }
 

@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class SearchComponent implements OnInit {
 
-  constructor(private auth:SmsService) { }
+  constructor(private auth: SmsService) { }
 
   product;
   ngOnInit() {
@@ -18,16 +18,11 @@ export class SearchComponent implements OnInit {
   searchProduct(search: NgForm) {
     console.log(search.value);
     this.auth.serachProduct(search.value).subscribe(res => {
-      this.product = res.bookbeans[0];
-
-      if (res && res.message === 'Success') {
-        console.log(res);
-
-      } else {
-        alert('Product is not found');
-      }
+      this.product = res.productBean[0];
+      console.log(res);
       // tslint:disable-next-line: no-unused-expression
       search.reset;
     });
   }
+
 }
